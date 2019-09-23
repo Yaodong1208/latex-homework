@@ -1,0 +1,86 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\begin{document}
+\title{\Large writing 3}
+\author{Yaodong Sheng, Macro Stronati}
+\date{}
+\maketitle
+\begin{abstract}
+The Monte Carlo method is quite useful for low dimensional problems. The author gives an example of applying different kinds of random techniques to measure a leaf’s [figure \ref{fig:leaf}] size. All techniques give respectable results. The main problem of the Monte Carlo method is data requirement which increases exponentially as the dimension of features increases linearly. 
+\end{abstract}
+
+\section{}
+
+\subsection{}
+\par 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4cm]{leaf.jpg}
+\caption{leaf}
+\label{fig:leaf}
+\end{figure}
+
+Although the theoretical formula shows that the method is no longer practical when dimension increases to 20; however,  some problems of even more features of dimension do yield to Monte Carlo techniques. For example, Paskov and Joseph Traub assess the value of a CM with just a few minutes of computation, instead of several hours. For more detail, check section \ref{section_ref}.
+
+\subsection{}
+\par To further illustrate this problem, the author gives an example: imagine a d-dimensional cube with edges of length 1 has a smaller cube inside it with edges of length 0.5 , and searching such a smaller cube when d is pretty high is very tough.  Such cases imply that the internal structure, more specifically, the sampling pattern do make a difference in search.
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+\multicolumn{3}{|c|}{my List} \\
+ \hline
+ number & string & string \\
+ \hline
+ 1 & cell2 & cell3 \\ 
+  \hline
+ 2 & cell5 & cell6 \\ 
+  \hline
+ 3 & cell8 & cell9 \\ 
+ \hline
+ 4 & cell10 & cell11 \\ 
+  \hline
+\end{tabular}
+\end{center}
+\(\sum_1^n=(1+n)n/2\)
+\section{section 2}
+
+\subsection{}
+\par As demonstrated in the article, the star discrepancy of quasirandom is the least significant one among all three sampling patterns. Interestingly, discrepancy determines the level of error or statistical imprecision to be expected for a given sample size. E.g. Convergence rate for pseudorandom and quasirandom is 1/N and(logN)d/Nrespectively where N is number of points and d is a number of features. 
+
+\subsection{}
+\par This result confirms the hypothesis. The reason why  some real problems with higher dimensions can be solved by using quasirandom is that the “effective dimension” of such a problem is much lower. Further, the analysis inspires scientists to think about homeopathic randomness which means to introduce as few randomness as possible.
+
+\section{}
+
+\subsection{} 
+\par In my opinion, this article is pretty interesting. It reveals the importance of a sampling pattern for different kinds of random. I really appreciate the way it introduces the main topic, but also lacks enough necessary evidence or examples, which makes it less concrete. As mentioned below. 
+
+\subsection{} \label{section_ref}
+\par For example, Hayes mentioned there are some other real life problems with high dimensions that can also be solved by the Quasi Random-Monte Carlo method. No other example is provided. I’d like to say that the graph that shows how a leaf’s size is measured is pretty good; however, the graph to show star dependency is too simple to understand. I think it should give more graphs to explain such ideas better.
+
+\section{}
+
+\subsection{}
+\par The other defect of this article is it lacks some critical mathematical inferences. For example, when it talks about the relation between discrepancy and Convergence rate. I understand it may reduce the fluency of reading the article if it contains so much mathematical equation, but for a scientific article, it will be more clear to include some important mathematical inference. 
+
+
+
+\subsection{}
+\par At least the author should put such material to the appendix. Last but not least, the author spends too many words for the introduction, which is not necessary. Since the potential reader must be familiar with such a topic, a brief introduction is enough.
+
+\par
+conference paper \cite{proc-disc-2009},
+Journal article \cite{Abril:2007:PHD:1188913.1188915},
+online \cite{knuthwebsite}
+inbook \cite{knuth-fa}
+
+
+
+
+\bibliographystyle{abbrv}
+\bibliography{citation}
+
+\end{document}
